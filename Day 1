@@ -1,0 +1,104 @@
+1.
+// output should print as                   cse "KARE" students
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("cse \"KARE\" students");
+		System.out.print("\\");
+	}
+}
+
+Output:
+cse "KARE" students
+\
+
+2.
+// output should print as                   \n
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.print("\\n");
+	}
+}
+
+Output:
+\n
+
+3.
+// Take the input from the user and the print the same number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n = sc.nextInt();
+		System.out.println(n);
+	}
+}
+
+Output:
+Enter the number
+10
+10
+
+4.
+// program to get a float value from the user and print the float number
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the float digit");
+        float a = sc.nextFloat();
+        System.out.println("the entered Float number is "+ a);
+        
+    }
+}
+
+Output:
+Enter the float digit
+5.666
+the entered Float number is 5.666
+
+
+5.
+// program to get a character from the user and print the charcater
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Character");
+        char a = sc.next().charAt(0);
+        System.out.println("the entered Character is "+ a);
+        
+    }
+}
+
+Output:
+Enter the Character
+f
+the entered Character is f
+
+
+6.
+// program to get a float digit from user and print it to the 2 decimal points
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the float ");
+        float n = sc.nextFloat();
+        System.out.printf("%.2f",n);
+    }
+}
+
+Output:
+Enter the float 
+5.666
+5.67
+
+7.
