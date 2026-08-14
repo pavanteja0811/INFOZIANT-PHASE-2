@@ -1,0 +1,246 @@
+// i/p            o/p
+// 1              cse 
+// 2              ece
+// 3              eee
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter  the number ");
+        int a = sc.nextInt();
+        switch(a){
+            case 1:
+                System.out.print("CSE");
+                break;
+            case 2:
+                System.out.print("ECE");
+                break;
+            case 3:
+                System.out.print("EEE");
+                break;
+            default:
+                System.out.print("invalid input");
+                break;
+        }
+    }
+}
+
+
+Output:
+Enter  the number 3
+EEE
+
+// i/p            o/p
+// 12 2              
+// +               14
+// -               10
+//*                 24
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter  two numbers ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.print("Enter the operation");
+        char c = sc.next().charAt(0);
+        switch(c){
+            case '+':
+                System.out.print(a+b);
+                break;
+            case '-':
+                System.out.print(a-b);
+                break;
+            case '*':
+                System.out.print(a*b);
+                break;
+            case '/':
+                System.out.print(a/b);
+                break;
+            case '%':
+                System.out.print(a%b);
+                break;
+            default:
+                System.out.print("invalid input");
+                break;
+        }
+    }
+}
+
+Output:
+Enter  two numbers 5
+8
+Enter the operation9 -
+-3
+
+// program to print n Natural Numbers
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("enter the number");
+	    int n = sc.nextInt();
+	    for (int i=1;i<=n;i++){
+	        System.out.print(i+" ");
+	    }
+	}
+}
+
+Output:
+enter the number6
+1 2 3 4 5 6 
+
+//  program to get the starting and the ending range and find the sum of the 
+// elemnets in the given range
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("enter the intial and final number");
+	    int s = sc.nextInt();
+	    int f = sc.nextInt();
+	    int sum=0;
+	    for (int i=s;i<=f;i++){
+	        sum+=i;
+	    }
+	    System.out.print("the sum of the numbers between the range "+ s + " and "+ f + " is : " + sum);
+	}
+}
+
+Output:
+enter the intial and final number5
+11
+the sum of the numbers between the range 5 and 11 is : 56
+
+
+//  program to find the factors of given number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("enter the number");
+	    int n = sc.nextInt();
+	    for (int i=1;i<=n/2;i++){
+	        if(n%i == 0){
+	            System.out.print(i + " ");
+	        }
+	    }
+	    System.out.print(n);
+	}
+}
+
+
+Output:
+enter the number6
+1 2 3 6
+
+//  program to find the factorial of a given number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter the number");
+		int n = sc.nextInt();
+		int fact=1;
+		if(n==0||n==1) {
+			fact = 1;
+		}
+
+		else {
+			for (int i=1; i<=n; i++) {
+				fact*=i;
+			}
+		}
+		System.out.print(fact);
+	}
+}
+
+//  program to find the factorial of a given number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter the number");
+		int n = sc.nextInt();
+		int fact=1;
+		if(n==0||n==1) {
+			fact = 1;
+		}
+
+		else {
+			for (int i=1; i<=n; i++) {
+				fact*=i;
+			}
+		}
+		System.out.print(fact);
+	}
+}
+
+
+Output:
+enter the number5
+120
+
+
+//  program to print the multiplication table
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter the number");
+		int n = sc.nextInt();
+		for(int i=1;i<=10;i++){
+		    System.out.println(n+" * " + i + " = "+ n*i);  
+		}
+	}
+}
+
+Output:
+enter the number9
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45
+9 * 6 = 54
+9 * 7 = 63
+9 * 8 = 72
+9 * 9 = 81
+9 * 10 = 90
+
+//  program to print the multiplication table without using multiplication operator
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter the number");
+		int n = sc.nextInt();
+		int pro=0;
+		for(int i=1;i<=10;i++){
+		    pro +=n;
+		    System.out.println(n+" * " + i + " = "+ pro);  
+		}
+	}
+}
+
+Output:
+enter the number10
+10 * 1 = 10
+10 * 2 = 20
+10 * 3 = 30
+10 * 4 = 40
+10 * 5 = 50
+10 * 6 = 60
+10 * 7 = 70
+10 * 8 = 80
+10 * 9 = 90
+10 * 10 = 100
